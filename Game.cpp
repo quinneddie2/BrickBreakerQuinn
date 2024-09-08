@@ -139,6 +139,7 @@ void Game::CheckCollision()
 			if (Bricks[BrickIter].color == ConsoleColor::Black) {
 				Bricks.erase(Bricks.begin() + BrickIter);
 				--BrickIter;
+
 				if (Bricks.empty()) {
 					ball.moving = false;
 					return;
